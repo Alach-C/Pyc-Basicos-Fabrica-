@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyC Básicos</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet"/>
+  
+  <!-- CSS  -->
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="container-fluid p-0">
+    <!-- Barra superior -->
+    <div class="barrasuperior-custom text-white text-center py-1 small">
+      Fabricantes Mayoristas · Envíos a todo el país
+    </div>
+
+    <!-- Logo -->
+    <div class="text-center py-3">
+      <img src="../assets/logo/logo-tp.webp" alt="Logo PyC" class="img-fluid" style="max-height: 80px;" />
+    </div>
+
+    <!-- Menú -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+       <!-- Botón hamburguesa visible solo en pantallas pequeñas -->
+       <button
+         class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!-- Contenedor del menú en móvil -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+           <!-- Items del menú -->
+            <li class="nav-item">
+             <a class="nav-link active" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="./colecciones.html">Colecciones</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="./comocomprar.html">Cómo comprar?</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="#">Envíos</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main class="container my-5">
+
+  <!-- Sección: Información de envíos -->
+  <section class="row align-items-center mb-5">
+    <div class="col-md-4 text-center">
+      <img src="../assets/iconos/envios.webp" alt="Ícono camión" class="img-fluid" style="max-width: 250px;" />
+    </div>
+    <div class="texto-bloque-principal col-md-8">
+      <h1 class="fs-3 fw-bold">Envíos</h1>
+      <p>
+        Al realizar la compra te permite seleccionar diferentes opciones de envío.
+        Seleccionando la opción <strong>“A coordinar con el vendedor”</strong>,
+        podrás pasarlo a retirar por la fábrica o solicitar otro medio de envío.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección: Opciones de envío -->
+  <section class="text-center my-5">
+    <h2 class="fs-4 fw-bold mb-4">Opciones de envíos</h2>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <div class="card-envio">
+        <img src="../assets/iconos/andreani-logo.webp" alt="Andreani" class="img-fluid logo-envio" />
+      </div>
+
+      <div class="card-envio">
+      <img src="../assets/iconos/epick-logo.webp" alt="Epick" class="img-fluid logo-envio" />
+     </div>
+
+     <div class="card-envio">
+      <img src="../assets/iconos/logo-correoarg.webp" alt="Correo Argentino" class="img-fluid logo-envio" />
+     </div>
+    </div>
+  </section>
+
+  <!-- Sección: Ubicación -->
+  <section class="row align-items-center justify-content-center text-md-start">
+    <div class="col-md-4 mb-3 mb-md-0">
+      <a href="https://maps.app.goo.gl/oqVnAB13exaeXzgo9" target="_blank">
+        <img src="../assets/fabrica /mapa-fabrica.webp" alt="Mapa ubicación fábrica" class="img-fluid rounded shadow" />
+      </a>
+    </div>
+    <div class="col-md-8">
+      <h3 class="fs-5 fw-bold text-center">La fábrica se encuentra</h3>
+      <p>
+        Nuestra fábrica se encuentra en la ciudad de La Plata, Provincia de Buenos Aires.<br />
+        <strong>Dirección:</strong> Diagonal 73 N° 2577
+      </p>
+    </div>
+  </section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="footer-custom py-4">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+
+       <!-- Iconos -->
+       <div class="col-md-6 d-flex justify-content-start align-items-center gap-3">
+         <a href="https://www.facebook.com/pycbasicos.claudioalach" target="_blank">
+          <img src="../assets/iconos/facebook.webp" alt="Facebook" width="25" />
+         </a>
+         <a href="https://www.instagram.com/pycbasicos/" target="_blank">
+          <img src="../assets/iconos/instagram.webp" alt="Instagram" width="25" />
+         </a>
+       </div>
+
+       <!-- Bloque de contacto -->
+       <div class="col-md-6 d-flex justify-content-end align-items-center text-white text-end">
+         <p class="mb-0">
+          Contacto<br>
+          pycbasicos@hotmail.com<br>
+          2216198526<br>
+          Diagonal 73 N 2577
+         </p>
+       </div>
+      </div>
+
+      <!-- Derechos de autor -->
+      <div class="text-center mt-3 text-white small fw-bold">
+      &copy; 2025 PyC Básicos. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>

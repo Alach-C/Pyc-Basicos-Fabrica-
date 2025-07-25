@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+
+/* Barra superior */
+.barrasuperior-custom {
+  background-color: rgb(203, 4, 4);
+  color: white;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Para sticky footer */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; 
+}
+/* Sección de bienvenida  */
+.bloque-principal {
+  padding: 50px 0;
+}
+/* párrafo de bienvenida */
+.texto-bloque-principal {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.texto-bloque-principal p {
+  text-align: left; 
+  font-size: 20px;
+  margin-top: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6; 
+}
+
+/*  logo */
+.logo-bienvenida {
+  max-width: 250px; 
+  width: 100%; 
+  height: auto; 
+}
+
+/* Títulos */
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: rgb(167, 6, 6);
+}
+h2, h3 {
+  font-size: 30px;
+
+  margin-bottom: 10px;
+  color: rgb(167, 6, 6);
+}
+
+/* Párrafos */
+p {
+  color: black;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.img-zoom:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Botón */
+.btn {
+  background-color: rgb(203, 4, 4);
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(167, 6, 6);
+}
+
+/* como comprar */
+.carrito-icon {
+  max-width: 500px; 
+  width: 100%; 
+  height: auto;
+  max-height: 14000px; 
+
+}
+.video-como-comprar {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.medios-pago img {
+  object-fit: contain;
+  max-height: 160px;
+}
+/* envios */ 
+.logo-envio {
+  max-height: 180px;
+  width: auto;
+  padding: 6px;
+}
+.card-envio {
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card-envio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* nosotros */
+.carousel-inner img {
+  border-radius: 8px;
+}
+
+.btn-outline-danger {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Footer personalizado */
+.footer-custom {
+  background-color: rgb(203, 4, 4);
+  width: 100vw; 
+  margin-top: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.footer-custom a img {
+  transition: transform 0.2s ease;
+}
+
+.footer-custom a:hover img {
+  transform: scale(1.1);
+}
+
+.footer-custom p {
+  margin: 0;
+  font-size: 16px;
+  text-align: right;
+  color: white;
+}
+
+/* para celular */ 
+
+@media (max-width: 575.98px) {
+  /* pag inicio movile */ 
+  .logo-bienvenida img  {
+    max-width: 150px;
+  }
+  .texto-bloque-principal p {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+  .texto-bloque-principal {
+    text-align: center;
+  }
+  h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+h2 h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 16px;
+}
+/* como comprar */
+.carrito-icon {
+max-width: 150px;
+}
+/* footer movile */
+  .footer-custom {
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer-custom p {
+    font-size: 10px;
+  }
+  .footer-custom a img {
+  transition: transform 0.5s ease;
+}
+}
